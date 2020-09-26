@@ -48,9 +48,9 @@ module.exports = class Webpack {
       presets: ["@babel/preset-env"],
     });
     return {
-      path: entryFile,
-      code,
-      denpendencies,
+      path: entryFile, // 模块路径
+      denpendencies, // 模块依赖信息
+      code, // 处理后的代码信息
     };
   }
   file(modules) {
